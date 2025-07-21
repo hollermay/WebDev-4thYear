@@ -1,0 +1,6 @@
+Node js- is a single-threaded, async event-driven JavaScript runtime environment which is cross-platform.
+It is built on the top of V8 engine(it internally usese V8 engine of chrome to execute js files anywhere) .
+ 
+In order to handle asynchronous operations like setTimeout(), setInterval ,fetch api calls , it uses libuv library.
+Libuv is a thread pool executor (multi-threaded library with a default size of 4).
+
