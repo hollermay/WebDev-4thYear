@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>HollerBlogs - Admin</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>HollerBlogs Admin</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <p>Here I manage the blogs.</p>
+    </header>
+    <main>
+        <section class="admin-section">
+            <h2>Create New Blog Post</h2>
+            <form id="blog-form" class="blog-form">
+                <div class="form-group">
+                    <label for="blog-title">Blog Title:</label>
+                    <input type="text" id="blog-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="blog-description">Description:</label>
+                    <textarea id="blog-description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="blog-url">URL:</label>
+                    <input type="url" id="blog-url">
+                </div>
+                <div class="form-group">
+                    <label for="blog-author">Published By:</label>
+                    <input type="text" id="blog-author" required>
+                </div>
+                <div class="form-group">
+                    <label for="blog-category">Category:</label>
+                    <input type="text" id="blog-category" required>
+                </div>
+                <div class="form-group">
+                    <label for="blog-date">Date:</label>
+                    <input type="date" id="blog-date" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="save-blog">Save Blog</button>
+                    <button type="button" id="reset-form">Reset</button>
+                </div>
+                <input type="hidden" id="blog-id" value="">
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Existing posts usually show up here</h2>
+            <div class="search-container">
+                <input type="text" id="search-blogs" placeholder="Search blogs here...">
+            </div>
+            <div id="blogs-list" class="blogs-list">
+            </div>
+        </section>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>

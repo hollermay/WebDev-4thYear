@@ -1,0 +1,109 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: #201f22;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 5px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: underline;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+h1, h2 {
+    color: #222;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.blog-card {
+    background: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.blog-card a {
+    background: #222;
+    color: #fff;
+    padding: 2px 5px;
+    text-decoration: underline;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+form {
+    background: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input, textarea {
+    width: 98%;
+    padding: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background: #222;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.blog-item {
+    background: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-left: 2px solid #222;
+    border-radius: 0;
+}
+
+.search-container {
+    margin-bottom: 8px;
+}
